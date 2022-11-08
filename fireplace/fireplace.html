@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bonfire.png" type="image/x-icon">
+    <link rel="stylesheet" href="fireplace.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <title>Fireplace</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 id="countdown">Relax...</h1>
+    </div>
+
+    <audio id="audio" loop>
+        <source src="fireplace.mp3" type="audio/mp3">
+    </audio>
+
+
+    <video autoplay="autoplay" loop="loop" muted defaultmuted playsinline id="myVideo">
+        <source src="Fireplace.mp4" type="video/mp4" controls>
+    </video>
+
+    <div class="btn-container">
+        <button id="play" class="btn">Start</button>
+        <button id="stop" class="btn" disabled>Stop</button>
+        <button class="btn"><a href="/index.html">Back</a></button>
+    </div>
+
+    <script src="fireplace.js"></script>
+</body>
+
+</html>

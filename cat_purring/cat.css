@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    font-family: 'Emilys Candy', cursive;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgb(17, 17, 17);
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.btn-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgb(17, 17, 17);
+    background-color: rgba(58, 56, 69, 0.7);
+    font-family: 'Emilys Candy', cursive;
+}
+
+.btn:hover {
+    background-color: rgba(26, 19, 47, 0.6);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media all and (max-width: 912px) {
+
+    body {
+        background-color: black;
+        ;
+    }
+
+    .header {
+        margin-top: 120px;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        right: 0;
+        bottom: 150px;
+    }
+
+    #myVideo {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media all and (max-width: 290px) {
+    .header {
+        margin-top: 120px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .btn-container {
+        bottom: 100px;
+    }
+
+    .btn {
+        margin: 10px;
+    }
+}
